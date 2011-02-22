@@ -1,0 +1,246 @@
+EF-Lynda-Rails-simple_cms	simple_cms
+demo_app			simple_cms_book_last_ch_section
+first_app
+kurt$ rails new micro_blog -T
+      create  
+      create  README
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/mailers
+      create  app/models
+      create  app/views/layouts/application.html.erb
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/secret_token.rb
+      create  config/initializers/session_store.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  doc
+      create  doc/README_FOR_APP
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.gitkeep
+      create  log
+      create  log/server.log
+      create  log/production.log
+      create  log/development.log
+      create  log/test.log
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/index.html
+      create  public/robots.txt
+      create  public/images
+      create  public/images/rails.png
+      create  public/stylesheets
+      create  public/stylesheets/.gitkeep
+      create  public/javascripts
+      create  public/javascripts/application.js
+      create  public/javascripts/controls.js
+      create  public/javascripts/dragdrop.js
+      create  public/javascripts/effects.js
+      create  public/javascripts/prototype.js
+      create  public/javascripts/rails.js
+      create  script
+      create  script/rails
+      create  tmp
+      create  tmp/sessions
+      create  tmp/sockets
+      create  tmp/cache
+      create  tmp/pids
+      create  vendor/plugins
+      create  vendor/plugins/.gitkeep
+kurt$ cd micro_blog
+kurt$ mate Gemfile
+kurt$ mate Gemfile
+kurt$ mate Gemfile
+kurt$ bundle install
+Fetching source index for http://rubygems.org/
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Installing activesupport (3.0.4) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Installing activemodel (3.0.4) 
+Using erubis (2.6.6) 
+Using rack (1.2.1) 
+Using rack-mount (0.6.13) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.24) 
+Installing actionpack (3.0.4) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.15) 
+Installing actionmailer (3.0.4) 
+Using arel (2.0.8) 
+Installing activerecord (3.0.4) 
+Installing activeresource (3.0.4) 
+Using bundler (1.0.10) 
+Installing diff-lcs (1.1.2) 
+Installing nokogiri (1.4.4) with native extensions 
+Using thor (0.14.6) 
+Installing railties (3.0.4) 
+Installing rails (3.0.4) 
+Installing rspec-core (2.0.1) 
+Installing rspec-expectations (2.0.1) 
+Installing rspec-mocks (2.0.1) 
+Installing rspec (2.0.1) 
+Installing rspec-rails (2.0.1) 
+Using sqlite3 (1.3.3) 
+Using sqlite3-ruby (1.3.3) 
+Installing webrat (0.7.1) 
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+kurt$ rails generate rspec:install
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+      create  autotest
+      create  autotest/discover.rb
+kurt$ git init
+Initialized empty Git repository in /Users/kurt/Sites/micro_blog/.git/
+kurt$ git add .
+kurt$ git commit -m "Initial commit"
+[master (root-commit) 7121e54] Initial commit
+ 41 files changed, 10325 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 .rspec
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README
+ create mode 100644 Rakefile
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100644 autotest/discover.rb
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 doc/README_FOR_APP
+ create mode 100644 lib/tasks/.gitkeep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/images/rails.png
+ create mode 100644 public/index.html
+ create mode 100644 public/javascripts/application.js
+ create mode 100644 public/javascripts/controls.js
+ create mode 100644 public/javascripts/dragdrop.js
+ create mode 100644 public/javascripts/effects.js
+ create mode 100644 public/javascripts/prototype.js
+ create mode 100644 public/javascripts/rails.js
+ create mode 100644 public/robots.txt
+ create mode 100644 public/stylesheets/.gitkeep
+ create mode 100755 script/rails
+ create mode 100644 spec/spec_helper.rb
+ create mode 100644 vendor/plugins/.gitkeep
+kurt$ mate README
+kurt$ git mv README README.markdown
+kurt$ git commit -a -m "Improved the README"
+[master 119316c] Improved the README
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+ rename README => README.markdown (99%)
+kurt$ git remote add origin git@github.com:Kurt-/micro_blog.git
+kurt$ git push origin master
+Counting objects: 67, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (50/50), done.
+Writing objects: 100% (67/67), 90.28 KiB, done.
+Total 67 (delta 3), reused 0 (delta 0)
+To git@github.com:Kurt-/micro_blog.git
+ * [new branch]      master -> master
+kurt$ heroku create
+Creating young-robot-882.... done
+http://young-robot-882.heroku.com/ | git@heroku.com:young-robot-882.git
+Git remote heroku added
+kurt$ git push heroku master
+Warning: Permanently added the RSA host key for IP address '50.16.232.130' to the list of known hosts.
+Counting objects: 67, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (50/50), done.
+Writing objects: 100% (67/67), 90.33 KiB, done.
+Total 67 (delta 3), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Configure Rails to log to stdout
+       Installing rails_log_stdout... done
+-----> Gemfile detected, running Bundler version 1.0.7
+       Unresolved dependencies detected; Installing...
+       Using --without development:test
+       Fetching source index for http://rubygems.org/
+       Installing rake (0.8.7) 
+       Installing abstract (1.0.0) 
+       Installing activesupport (3.0.4) 
+       Installing builder (2.1.2) 
+       Installing i18n (0.5.0) 
+       Installing activemodel (3.0.4) 
+       Installing erubis (2.6.6) 
+       Installing rack (1.2.1) 
+       Installing rack-mount (0.6.13) 
+       Installing rack-test (0.5.7) 
+       Installing tzinfo (0.3.24) 
+       Installing actionpack (3.0.4) 
+       Installing mime-types (1.16) 
+       Installing polyglot (0.3.1) 
+       Installing treetop (1.4.9) 
+       Installing mail (2.2.15) 
+       Installing actionmailer (3.0.4) 
+       Installing arel (2.0.8) 
+       Installing activerecord (3.0.4) 
+       Installing activeresource (3.0.4) 
+       Using bundler (1.0.7) 
+       Installing thor (0.14.6) 
+       Installing railties (3.0.4) 
+       Installing rails (3.0.4) 
+       Installing sqlite3 (1.3.3) with native extensions 
+       Installing sqlite3-ruby (1.3.3) 
+       Your bundle is complete! It was installed into ./.bundle/gems/
+       Compiled slug size is 3.8MB
+-----> Launching... done
+       http://young-robot-882.heroku.com deployed to Heroku
+
+To git@heroku.com:young-robot-882.git
+ * [new branch]      master -> master
+kurt$ git push
+Everything up-to-date
+kurt$ git push heroku
+Everything up-to-date
+kurt$ 
