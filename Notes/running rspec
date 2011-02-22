@@ -1,0 +1,10 @@
+kurt$ bundle exec rspec spec/
+..
+
+Finished in 0.20117 seconds
+2 examples, 0 failures
+
+
+or just run autotest
+
+outputs to Growl for notification of pass or failure
