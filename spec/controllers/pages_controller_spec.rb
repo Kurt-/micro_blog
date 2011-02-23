@@ -4,7 +4,7 @@ describe PagesController do
    render_views
    
    before(:each) do 
-     @base_title = "Ruby on Rails Tutorial Micro Blog"
+     @base_title = "Ruby on Rails Micro Blog"
    end
    
   

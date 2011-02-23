@@ -1,7 +1,7 @@
 EF-Lynda-Rails-simple_cms	simple_cms
 demo_app			simple_cms_book_last_ch_section
 first_app
-kurt$ rails new micro_blog -T
+kurt$ rails new micro_blog -T (no test frame work using rspec)
       create  
       create  README
       create  Rakefile

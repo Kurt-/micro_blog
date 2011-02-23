@@ -1,0 +1,316 @@
+kurt$ pwd
+/Users/kurt/Sites/micro_blog
+kurt$ git co -b static-pages
+Switched to a new branch 'static-pages'
+kurt$ rails generate controller Pages home contact
+      create  app/controllers/pages_controller.rb
+       route  get "pages/contact"
+       route  get "pages/home"
+      invoke  erb
+      create    app/views/pages
+      create    app/views/pages/home.html.erb
+      create    app/views/pages/contact.html.erb
+      invoke  rspec
+      create    spec/controllers/pages_controller_spec.rb
+      create    spec/views/pages
+      create    spec/views/pages/home.html.erb_spec.rb
+      create    spec/views/pages/contact.html.erb_spec.rb
+      invoke  helper
+      create    app/helpers/pages_helper.rb
+      invoke    rspec
+      create      spec/helpers/pages_helper_spec.rb
+kurt$ git add .
+kurt$ git commit -am "Added a Pages controller"
+[static-pages 63945dd] Added a Pages controller
+ 10 files changed, 308 insertions(+), 0 deletions(-)
+ create mode 100644 Notes/create project, commit, push to Github, deploy to Heroku.txt
+ create mode 100644 app/controllers/pages_controller.rb
+ create mode 100644 app/helpers/pages_helper.rb
+ create mode 100644 app/views/pages/contact.html.erb
+ create mode 100644 app/views/pages/home.html.erb
+ create mode 100644 spec/controllers/pages_controller_spec.rb
+ create mode 100644 spec/helpers/pages_helper_spec.rb
+ create mode 100644 spec/views/pages/contact.html.erb_spec.rb
+ create mode 100644 spec/views/pages/home.html.erb_spec.rb
+kurt$ sudo gem install autotest -v 4.3.2
+Password:
+Fetching: autotest-4.3.2.gem (100%)
+Successfully installed autotest-4.3.2
+1 gem installed
+Installing ri documentation for autotest-4.3.2...
+Installing RDoc documentation for autotest-4.3.2...
+kurt$ gem install autotest-rails-pure -v 4.1.0
+Fetching: autotest-rails-pure-4.1.0.gem (100%)
+Successfully installed autotest-rails-pure-4.1.0
+1 gem installed
+Installing ri documentation for autotest-rails-pure-4.1.0...
+Installing RDoc documentation for autotest-rails-pure-4.1.0...
+kurt$ sudo gem install autotest
+Fetching: ZenTest-4.5.0.gem (100%)
+Fetching: autotest-4.4.6.gem (100%)
+Successfully installed ZenTest-4.5.0
+Successfully installed autotest-4.4.6
+2 gems installed
+Installing ri documentation for ZenTest-4.5.0...
+Installing ri documentation for autotest-4.4.6...
+File not found: lib
+ERROR:  While generating documentation for autotest-4.4.6
+... MESSAGE:   exit
+... RDOC args: --ri --op /Library/Ruby/Gems/1.8/doc/autotest-4.4.6/ri --main README.txt --quiet lib History.txt Manifest.txt README.txt --title autotest-4.4.6 Documentation
+(continuing with the rest of the installation)
+Installing RDoc documentation for ZenTest-4.5.0...
+Installing RDoc documentation for autotest-4.4.6...
+File not found: lib
+ERROR:  While generating documentation for autotest-4.4.6
+... MESSAGE:   exit
+... RDOC args: --op /Library/Ruby/Gems/1.8/doc/autotest-4.4.6/rdoc --main README.txt --quiet lib History.txt Manifest.txt README.txt --title autotest-4.4.6 Documentation
+(continuing with the rest of the installation)
+kurt$ gem install autotest-rails-pure
+Fetching: autotest-rails-pure-4.1.2.gem (100%)
+Successfully installed autotest-rails-pure-4.1.2
+1 gem installed
+Installing ri documentation for autotest-rails-pure-4.1.2...
+Installing RDoc documentation for autotest-rails-pure-4.1.2...
+kurt$ sudo install autotest-fsevent -v 0.2.2
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+kurt$ sudo gem install autotest-fsevent -v 0.2.2
+Fetching: sys-uname-0.8.5.gem (100%)
+Building native extensions.  This could take a while...
+Fetching: autotest-fsevent-0.2.2.gem (100%)
+Building native extensions.  This could take a while...
+
+In order to use autotest-fsevent, the following line has to be added to
+your ~/.autotest file:
+
+require 'autotest/fsevent'
+
+For more information, feedback and bug submissions, please visit:
+
+http://www.bitcetera.com/products/autotest-fsevent
+
+If you like this gem, please consider to recommend me on Working with
+Rails, thank you!
+
+http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
+
++-------------------------------------------------------------------------+
+| UPGRADING USERS please take a look at the README now for important news |
+| related to modified dependencies since 0.1.x and Rails compatibility.   |
++-------------------------------------------------------------------------+
+
+Successfully installed sys-uname-0.8.5
+Successfully installed autotest-fsevent-0.2.2
+2 gems installed
+Installing ri documentation for sys-uname-0.8.5...
+Installing ri documentation for autotest-fsevent-0.2.2...
+Installing RDoc documentation for sys-uname-0.8.5...
+Installing RDoc documentation for autotest-fsevent-0.2.2...
+kurt$ sudo gem install autotest-growl -v 0.2.4
+Fetching: autotest-growl-0.2.4.gem (100%)
+
+In order to use autotest-growl, the following line has to be added to your
+~/.autotest file:
+
+require 'autotest/growl'
+
+Make sure the notification service installed on your computer:
+
+http://growl.info (Growl for Mac OS X)
+http://growlforwindows.com (Growl for Windows)
+http://www.galago-project.org (libnotify for Linux)
+
+If Growl notifications are not always displayed, take a look at the README
+for assistance.
+
+For more information, feedback and bug submissions, please visit:
+
+http://www.bitcetera.com/products/autotest-growl
+
+If you like this gem, please consider to recommend me on Working with
+Rails, thank you!
+
+http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
+
++-------------------------------------------------------------------------+
+| UPGRADING USERS please take a look at the README now for important news |
+| related to modified dependencies since 0.1.x and Rails compatibility.   |
++-------------------------------------------------------------------------+
+
+Successfully installed autotest-growl-0.2.4
+1 gem installed
+Installing ri documentation for autotest-growl-0.2.4...
+Installing RDoc documentation for autotest-growl-0.2.4...
+kurt$ sudo gem install autotest-fsevent
+Fetching: autotest-fsevent-0.2.4.gem (100%)
+Building native extensions.  This could take a while...
+
+-------------------------------------------------------------------------------
+
+In order to use autotest-fsevent, install either the comprehensive 
+ZenTest gem or the lightweight autotest-standalone gem and then add the 
+following line to your ~/.autotest file:
+
+require 'autotest/fsevent'
+
+For more information, feedback and bug submissions, please visit:
+
+http://www.bitcetera.com/products/autotest-fsevent
+
+If you like this gem, please consider to recommend me on Working with
+Rails, thank you!
+
+http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
+
+-------------------------------------------------------------------------------
+
+Successfully installed autotest-fsevent-0.2.4
+1 gem installed
+Installing ri documentation for autotest-fsevent-0.2.4...
+Installing RDoc documentation for autotest-fsevent-0.2.4...
+kurt$ sudo gem install autotest-growl
+Fetching: autotest-growl-0.2.9.gem (100%)
+
+-------------------------------------------------------------------------------
+
+In order to use autotest-growl, install either the comprehensive 
+ZenTest gem or the lightweight autotest-standalone gem and then add the 
+following line to your ~/.autotest file:
+
+require 'autotest/growl'
+
+Make sure the notification service installed on your computer:
+
+http://growl.info (Growl for Mac OS X)
+http://growlforwindows.com (Growl for Windows)
+http://www.galago-project.org (libnotify for Linux)
+
+If Growl notifications are not always displayed, take a look at the README
+for assistance.
+
+For more information, feedback and bug submissions, please visit:
+
+http://www.bitcetera.com/products/autotest-growl
+
+If you like this gem, please consider to recommend me on Working with
+Rails, thank you!
+
+http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
+
+-------------------------------------------------------------------------------
+
+Successfully installed autotest-growl-0.2.9
+1 gem installed
+Installing ri documentation for autotest-growl-0.2.9...
+Installing RDoc documentation for autotest-growl-0.2.9...
+kurt$ mate .autotest
+kurt$ pwd
+/Users/kurt/Sites/micro_blog
+kurt$ ls
+Gemfile		Rakefile	config.ru	log		tmp
+Gemfile.lock	app		db		public		vendor
+Notes		autotest	doc		script
+README.markdown	config		lib		spec
+kurt$ ll
+total 96
+drwxr-xr-x  25 kurt  staff   850B Feb 22 12:05 .
+drwxr-xr-x+  9 kurt  staff   306B Feb 22 10:19 ..
+-rw-r--r--@  1 kurt  staff   6.0K Feb 22 12:06 .DS_Store
+-rw-r--r--@  1 kurt  staff    52B Feb 22 12:06 .autotest
+drwxr-xr-x  13 kurt  staff   442B Feb 22 11:44 .git
+-rw-r--r--   1 kurt  staff    40B Feb 22 10:17 .gitignore
+-rw-r--r--   1 kurt  staff     9B Feb 22 10:32 .rspec
+-rw-r--r--@  1 kurt  staff   867B Feb 22 10:28 Gemfile
+-rw-r--r--   1 kurt  staff   2.1K Feb 22 10:30 Gemfile.lock
+drwxr-xr-x   3 kurt  staff   102B Feb 22 10:53 Notes
+-rw-r--r--@  1 kurt  staff   9.0K Feb 22 10:35 README.markdown
+-rw-r--r--   1 kurt  staff   269B Feb 22 10:17 Rakefile
+drwxr-xr-x   8 kurt  staff   272B Feb 22 11:33 app
+drwxr-xr-x   3 kurt  staff   102B Feb 22 10:32 autotest
+drwxr-xr-x  10 kurt  staff   340B Feb 22 10:17 config
+-rw-r--r--   1 kurt  staff   159B Feb 22 10:17 config.ru
+drwxr-xr-x   4 kurt  staff   136B Feb 22 11:39 db
+drwxr-xr-x   3 kurt  staff   102B Feb 22 10:17 doc
+drwxr-xr-x   3 kurt  staff   102B Feb 22 10:17 lib
+drwxr-xr-x   6 kurt  staff   204B Feb 22 10:17 log
+drwxr-xr-x  11 kurt  staff   374B Feb 22 10:17 public
+drwxr-xr-x   3 kurt  staff   102B Feb 22 10:17 script
+drwxr-xr-x   6 kurt  staff   204B Feb 22 11:33 spec
+drwxr-xr-x   6 kurt  staff   204B Feb 22 10:17 tmp
+drwxr-xr-x   3 kurt  staff   102B Feb 22 10:17 vendor
+kurt$ mate ~/.autotest
+kurt$ git rm -r spec/views
+rm 'spec/views/pages/contact.html.erb_spec.rb'
+rm 'spec/views/pages/home.html.erb_spec.rb'
+kurt$ git rm -r spec/helpers
+rm 'spec/helpers/pages_helper_spec.rb'
+kurt$ mate spec/controllers/pages_controller_spec.rb
+kurt$ curl
+curl: try 'curl --help' or 'curl --manual' for more information
+kurt$ which curl
+/usr/bin/curl
+kurt$ curl --head www.google.com
+HTTP/1.1 200 OK
+Date: Tue, 22 Feb 2011 17:22:44 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+Set-Cookie: PREF=ID=5ac48e136fde2633:FF=0:TM=1298395364:LM=1298395364:S=WmEitm6Y9QfUSjyu; expires=Thu, 21-Feb-2013 17:22:44 GMT; path=/; domain=.google.com
+Set-Cookie: NID=44=IHCRy18up8kw7Duh8nQWr9tQpmDz3ZKZDTsCgzhQ_lnp2kLv1R9XwtP-UjL7JwCVeDLO0h7QkgEdFyqgtn3EO7JjTcyejLcUv1fFIPpAA1sowAzrOH932iLvI4-qQO37; expires=Wed, 24-Aug-2011 17:22:44 GMT; path=/; domain=.google.com; HttpOnly
+Server: gws
+X-XSS-Protection: 1; mode=block
+Transfer-Encoding: chunked
+
+kurt$ curl --head google.com
+HTTP/1.1 301 Moved Permanently
+Location: http://www.google.com/
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 22 Feb 2011 17:25:03 GMT
+Expires: Thu, 24 Mar 2011 17:25:03 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 219
+X-XSS-Protection: 1; mode=block
+
+kurt$ rspec spec/
+-bash: rspec: command not found
+kurt$ bundle exec rspec spec/controllers
+..
+
+Finished in 0.1139 seconds
+2 examples, 0 failures
+kurt$ bundle exec rspec spec/controllers/pages_controller.rb
+/Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/configuration.rb:306:in `load': no such file to load -- /Users/kurt/Sites/micro_blog/spec/controllers/pages_controller.rb (LoadError)
+	from /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/configuration.rb:306:in `load_spec_files'
+	from /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/configuration.rb:306:in `map'
+	from /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/configuration.rb:306:in `load_spec_files'
+	from /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/command_line.rb:18:in `run'
+	from /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/runner.rb:55:in `run_in_process'
+	from /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/runner.rb:46:in `run'
+	from /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/lib/rspec/core/runner.rb:10:in `autorun'
+	from /Library/Ruby/Gems/1.8/bin/rspec:19
+kurt$ bundle exec rspec spec/controllers/pages_controller_spec.rb
+..
+
+Finished in 0.23474 seconds
+2 examples, 0 failures
+kurt$ autotest
+loading autotest/rails_rspec2
+
+
+--------------------------------------------------------------------------------
+
+
+bundle exec /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -S /Library/Ruby/Gems/1.8/gems/rspec-core-2.0.1/bin/rspec --autotest '/Users/kurt/Sites/micro_blog/spec/controllers/pages_controller_spec.rb'
+..
+
+Finished in 0.15379 seconds
+2 examples, 0 failures
+2011-02-22 12:39:31.048 growlnotify[83018:903] could not find local GrowlApplicationBridgePathway, falling back to NSDNC
+^[[A^CInterrupt a second time to quit
+
+
+--------------------------------------------------------------------------------
