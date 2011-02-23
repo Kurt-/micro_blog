@@ -14,7 +14,7 @@ describe PagesController do
           response.should be_success
         end
         it "should have the right title" do 
-          get 'home' 
+          get 'home' # have_selector needs the render_views line since it tests the view along with the action
           response.should have_selector("title",
                                         :content => @base_title + " | Home")
         end
